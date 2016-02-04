@@ -1,5 +1,11 @@
+# -*- coding: utf-8 -*-
+
+try:
+    from queue import Queue
+except ImportError:
+    from Queue import Queue
+
 import threading
-from queue import Queue
 import requests
 import pyprind
 
